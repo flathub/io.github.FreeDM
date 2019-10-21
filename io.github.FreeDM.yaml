@@ -66,7 +66,7 @@ modules:
     - install -Dm 644 gzdoom.sf2 /app/share/sounds/sf2/gzdoom.sf2
   - type: script
     commands:
-    - gzdoom +fluid_patchset /app/share/sounds/sf2/gzdoom.sf2 $@
+    - gzdoom +fluid_patchset /app/share/sounds/sf2/gzdoom.sf2 -file lights.pk3 brightmaps.pk3 "$@"
     dest-filename: gzdoom.sh
   post-install:
   - install -D gzdoom.sh /app/bin/gzdoom.sh
