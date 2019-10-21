@@ -75,13 +75,13 @@ modules:
   buildsystem: simple
   sources:
   - type: archive
-    url: https://github.com/freedoom/freedoom/releases/download/v0.11.3/freedm-0.11.3.zip
-    sha256: 2af698fb028ccc95993827f88679ea9b246116c2966894a51578755cad800ce0
+    url: https://github.com/freedoom/freedoom/releases/download/v0.12.0/freedm-0.12.0.zip
+    sha256: 088e95b7e7a56a57022dcb23cd142d7475b43f90a9e329e9f98f8bd89a571c51
   - type: file
-    url: https://raw.githubusercontent.com/freedoom/freedoom/v0.11.3/dist/freedm.desktop
+    url: https://raw.githubusercontent.com/freedoom/freedoom/v0.12.0/dist/freedm.desktop
     sha256: 3f54a0eb2f49909e03ff87b961a1ea247e0eec22b0a9f220febb93196163d707
   - type: file
-    url: https://raw.githubusercontent.com/freedoom/freedoom/v0.11.3/dist/freedm.appdata.xml
+    url: https://raw.githubusercontent.com/freedoom/freedoom/v0.12.0/dist/freedm.appdata.xml
     sha256: c7879d27b2e712245b58b0372b313b08a5fae8a1fd1dca97d044195b78981546
   - type: file
     path: freedm_title2-48x48.png
@@ -95,7 +95,7 @@ modules:
   - install -Dm 644 freedm.desktop -t /app/share/applications
   - install -Dm 644 freedm.appdata.xml -t /app/share/appdata
   - sed -e 's|</description>|<p>This package uses the GZDoom source port.</p></description>|' -i /app/share/appdata/freedm.appdata.xml
-  - sed -e 's|</component>|<releases><release version="0.11.3" date="2017-07-18"></release></releases></component>|' -i /app/share/appdata/freedm.appdata.xml
+  - sed -e 's|</component>|<releases><release version="0.12.0" date="2017-07-18"></release></releases></component>|' -i /app/share/appdata/freedm.appdata.xml
   - sed -e 's|</component>|<content_rating type="oars-1.1"><content_attribute id="violence-bloodshed">intense</content_attribute></content_rating></component>|' -i /app/share/appdata/freedm.appdata.xml
   - install -Dm 644 freedm_title2-48x48.png /app/share/icons/hicolor/48x48/apps/freedm.png
   - install -Dm 644 freedm_title2-64x64.png /app/share/icons/hicolor/64x64/apps/freedm.png
